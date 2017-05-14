@@ -60,6 +60,12 @@ function doCalc(symbol, event){
         currentNumber = +currentNumber / -1;
         calcDisplay.value = currentNumber;
     }
+    else if(symbol === "ce"){
+        currentNumber = 0;
+        currentOperation = null;
+        calcResult = null;
+        calcDisplay.value = 0;
+    }
 }
 
 function doOperation(num1, num2, operation){
